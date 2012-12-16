@@ -1,0 +1,53 @@
+{% extends "cv_base.html" %}
+{% load i18n %}
+
+{% block content %}
+<div id="cv" class="row-fluid">
+	<div class="span12 cv-page">
+		<div class="section header">
+			<div class="contact address">{{ contact.address }}</div>
+			<h1 class="name">{{ first_name|upper }}<br>{{ last_name|upper }}</h1>
+			<div class="contacts">
+				<span class="contact phone">{{ contact.phone }}</span>
+				<span class="contact email">{{ contact.email }}</span>
+				<!-- 
+					<span class="contact website">{{ contact.website }}</span>
+				-->
+			</div>
+			
+		</div>
+		<div class="section summary">
+			<h2>{% trans "Summary" %}</h2>
+			<div>{{ summary }}</div>
+		</div>
+		<div class="section skils">
+			<h2>{% trans "Skils" %}</h2>
+			<ul>
+				{% for sk in skills %}
+				<li class="skill">{{ sk }}</li>
+				{% endfor %}
+			</ul>
+		</div>
+		<div class="section experience">
+			<h2>{% trans "Experience" %}</h2>
+		</div>
+		<div class="section education">
+			<h2>{% trans "Education" %}</h2>
+		</div>
+		<div class="section recomendations">
+			<h2>{% trans "Recomendations" %}</h2>
+			{% for r in recomendations %}
+			<div>
+				<table>
+					<tr>
+						<td><span class="quotes start">“</span></td>
+						<td class="text">{{ r.text }}</td>
+						<td><span class="quotes end">”</span></td>
+					</tr>
+				</table>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+{% endblock %}

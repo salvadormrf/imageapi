@@ -1,0 +1,33 @@
+
+{
+	"name": "Salvador Faria",
+	"first_name": "Salvador",
+	"last_name": "Faria",
+	"photo": "http://m3.licdn.com/mpr/mprx/0_Oz05kBBtkebDguOUYNp9kzXtXd8Clf7UyBIVkqchR2NtmwZRt1fWoN_aobhg-HmB09jUwP5Egh9U",
+	"contact": {
+		"phone": "+351 967 021 709",
+		"address": "Madeira - Portugal",
+		"email": "salvador.mrf@gmail.com"
+	}, 
+	"summary": "Startup experience. Agile software development in Internet scale applications (with source control, dev/stage/prod release cycle, data migrations, continuous deployment). Developed backend services using programming languages like Python, PHP and Java, and frontend programming with JavaScript and popular libraries like JQuery",
+	"skills": ["Web Application Development", "Backend development", "Frontend development", "Amazon Web Services (AWS)", "Django/CodeIgniter", "Python/PHP/Java/JavaScript", "Memcached/Redis", "HTML5/CSS", "SVN/GIT", "PostgreSQL/MySQL"],
+	"experience": [],
+	"education": [
+		{
+			"title": "MSc, Computer Science",
+			"date": "2008 - 2010",
+			"university": "Universidade da Madeira"
+		},
+		{
+			"title": "BSc, Computer Science",
+			"date": "2005 - 2008",
+			"university": "Universidade da Madeira"
+		}
+	],
+	"recomendations": [
+		{
+			"Author": "Shay Rojansky", 
+			"text": "Salvador is a great web engineer with great technical aptitude and a very flexible skillset. He is eager to learn new technologies and easily adapted to new challenges. He is an excellent web backend developer (Python, Linux...), who has also mastered cutting-edge frontend technologies and has a great understanding of how the web works - both technically and non-technically. Finally, he is also a very reliable team member and a great person to have around socially."
+		}
+	]
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		{% block meta %}
+		<!-- Meta information -->
+		<meta name="description" content="XXXXX">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		{% endblock %}
+		
+		<!-- Styles -->
+		<link href="{{ STATIC_URL }}css/vendor/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="{{ STATIC_URL }}css/font-awesome.css">
+		<link rel="stylesheet" href="{{ STATIC_URL }}css/cv.css">
+		{% block head_css %}{% endblock %}
+		
+		<!-- JavaScript -->
+		<script src="{{ STATIC_URL }}js/vendor/jquery-1.7.2.min.js"></script>
+		<script src="{{ STATIC_URL }}js/vendor/bootstrap.min.js"></script>
+		{% block head_javascript %}{% endblock %}
+		
+		<!-- Google Analytics -->
+		<script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-34787643-1']);
+		  _gaq.push(['_trackPageview']);
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		</script>
+	</head>
+	<body>
+		{% block content %}{% endblock %}
+	</body>
+</html>

@@ -1,0 +1,64 @@
+.centered{
+	text-align: center;
+}
+body{
+	margin: 40px;
+}
+
+h2{
+	font-size: 20px;
+	color: #555;
+}
+
+#cv .cv-page{
+	border: 1px solid #CCCCCC;
+	padding: 50px;
+	max-width: 800px;
+}
+
+#cv .section{
+	border-top: 1px solid #CCCCCC;
+	padding: 20px 0px;
+}
+
+/******************* HEADER SECTION ***************************/
+#cv .section.header{
+	border: none;
+}
+
+#cv .section.header .contact{
+	font-size: 19px;
+}
+
+#cv .section.header .name{
+	font-size: 50px;
+	line-height: 40px;
+	text-align: right;
+}
+
+#cv .section.header .address,
+#cv .section.header .contacts{
+	text-align: right;
+}
+
+#cv .section.header .contacts .contact{
+	margin-left: 20px;
+}
+
+/******************* QUOTES SECTION ***************************/
+#cv .section.recomendations .quotes{
+	font-size: 100px;
+	line-height: 100px;
+}
+
+#cv .section.recomendations .text{
+	padding: 10px;
+	font-size: 10px;
+	text-align: justify;
+}
+
+
+
+
+
+

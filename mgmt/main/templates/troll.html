@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block meta %}
+<meta name="description" content="troll a face, meme">
+{% endblock %}
+
+{% block head_javascript %}
+<script src="{{ STATIC_URL }}js/troll.js"></script>
+{% endblock %}
+
+{% block content %}
+<div class="row-fluid" id="font-merge">
+	<div class="span2">&nbsp;</div>
+	<div class="span8">
+		<div class="page-header">
+			<h1>Want to troll a face ?</h1>
+		</div>
+		
+		<div class="alert fade in hidden">
+			<button type="button" class="close">×</button>
+			<strong>Invalid image url!</strong> Please copy and paste an image url.
+		</div>
+		
+		<ul class="meme-list pull-right">
+			<li>
+				<img class="meme-face-option" src="{{ STATIC_URL }}img/meme_faces/troll.png" data-api-method="troll">
+			</li>
+			<li>
+				<img class="meme-face-option" src="{{ STATIC_URL }}img/meme_faces/pedobear.png" data-api-method="pedobear">
+			</li>
+			<li>
+				<img class="meme-face-option" src="{{ STATIC_URL }}img/meme_faces/cecilia.png" data-api-method="cecilia">
+			</li>
+			<li>
+				<img class="meme-face-option" src="{{ STATIC_URL }}img/meme_faces/dog.png" data-api-method="dog">
+			</li>
+		</ul>
+		
+		<p class="centered-text">
+			<img class="img-polaroid image-preview image-link" src="/api/v1/face/troll?url=http://www.nunoteixeira.eu/fotos/200911664220.jpg">
+		</p>
+		<div class="well form-search centered-text">			
+			<label>
+				Image url: 
+				<input class="input-xlarge" type="text" name="url" id="troll-url-input" />
+            	<button type="submit" id="troll-btn" class="btn btn-primary">Troll</button>
+           	</label>
+		</div>		
+	</div>
+	<div class="span2">&nbsp;</div>
+</div>
+{% endblock %}

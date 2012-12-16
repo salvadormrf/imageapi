@@ -1,0 +1,20 @@
+#!/bin/bash -f
+
+#echo "Running migrations..."
+#/usr/local/imageapi/mgmt/manage.py migrate
+
+#echo "Synchronizing database..."
+#/usr/local/imageapi/mgmt/manage.py syncdb
+
+sudo chown -R www-data /usr/local/imageapi/mgmt/main/static/
+
+echo "Set webiste as default: www.trollaface.com..."
+sudo a2dissite default
+sudo a2ensite www.trollaface.com
+
+echo "Reloading Apache config..."
+/usr/sbin/apache2ctl graceful
+
+echo "Reloading rsyslog config..."
+/usr/sbin/service rsyslog reload
+

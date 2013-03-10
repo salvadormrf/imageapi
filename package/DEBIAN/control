@@ -1,8 +1,0 @@
-Package: imageapi
-Version: 0.1
-Priority: optional
-Architecture: all
-Essential: no
-Maintainer: Salvador Faria
-Description: The ImageAPI project
-Depends: python2.7, apache2, python-django, python-lxml, libapache2-mod-wsgi, python-memcache, memcached, python-fontforge, python-opencv, python-numpy, python-imaging

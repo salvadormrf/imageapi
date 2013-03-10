@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>{{ object.name }}</h1>
+<ul class="row thumbnails">
+    {% for placeholder in object.placeholder_set.all %}
+    <li>
+    	<div>
+    		<img class="img-polaroid" src="/api/v1/placeholder/default?w={{ placeholder.width }}&h={{ placeholder.height }}&t={{ placeholder.label }}">
+    		<label>{{ placeholder.size }} - {{ placeholder.description }}</label>
+    	</div>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

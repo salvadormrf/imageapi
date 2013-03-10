@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<ul class="row thumbnails">
+    {% for page in object_list %}
+    <li>
+        <a href="{% url "page_detail" pk=page.pk %}">{{ page.name }}</a>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}
